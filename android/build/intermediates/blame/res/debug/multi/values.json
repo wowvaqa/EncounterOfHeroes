@@ -1,0 +1,40 @@
+[
+    {
+        "outputFile": "D:\\docs\\Dropbox\\java\\EncounterOfHeroes\\android\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "D:\\docs\\Dropbox\\java\\EncounterOfHeroes\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 110,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 574
+                },
+                "from": {
+                    "file": "D:\\docs\\Dropbox\\java\\EncounterOfHeroes\\android\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 481
+                    }
+                }
+            }
+        ]
+    }
+]
