@@ -21,7 +21,7 @@ public class ScreenMainMenu extends DefaultScreen {
     private TextButton button04;
 
     public ScreenMainMenu() {
-        skin = new Skin(Gdx.files.internal("styles/uiskin.json"));
+        skin = new Skin(Gdx.files.local("styles/uiskin.json"));
 
         button00 = new TextButton("Single", skin);
         button01 = new TextButton("Hot Seat", skin);
