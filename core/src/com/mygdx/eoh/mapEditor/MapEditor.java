@@ -96,6 +96,7 @@ public class MapEditor {
     }
 
     public Stage createStage(int sizeColumns, int sizeRow, Viewport viewport) {
+
         Stage stage = new Stage(viewport);
 
         mapColumns = sizeColumns;

@@ -1,5 +1,7 @@
 package com.mygdx.eoh.screens;
 
+import com.badlogic.gdx.graphics.Camera;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -16,6 +18,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.mygdx.eoh.assets.AssetsMapEditor;
+import com.mygdx.eoh.classes.DefaultGestureDetector;
+import com.mygdx.eoh.classes.DefaultGestureListener;
 import com.mygdx.eoh.classes.DefaultScreen;
 import com.mygdx.eoh.mapEditor.MapEditor;
 
@@ -28,6 +32,9 @@ public class ScreenMapEditor extends DefaultScreen {
     private Interface interfaceManager;
 
     private FitViewport viewport;
+    private FitViewport mapStageViewport;
+
+    private Camera mapStageCamera;
 
     private MapEditor mapEditor;
 
@@ -38,6 +45,9 @@ public class ScreenMapEditor extends DefaultScreen {
     private boolean mapStageFlag = false;
 
     public ScreenMapEditor() {
+
+        mapStageCamera = new OrthographicCamera();
+        mapStageViewport = new FitViewport(ScreenManager.WIDTH, ScreenManager.HEIGHT, mapStageCamera);
 
         viewport = (FitViewport) super.getMainStage().getViewport();
 
@@ -74,7 +84,17 @@ public class ScreenMapEditor extends DefaultScreen {
     @Override
     public void dispose() {
         super.dispose();
-        mapStage.dispose();
+        if (mapStage != null){
+            mapStage.dispose();
+        }
+    }
+
+    @Override
+    public void show() {
+        super.show();
+        if (mapStage != null) {
+            super.getInputMultiplexer().addProcessor(mapStage);
+        }
     }
 
     private class Interface {
@@ -179,16 +199,16 @@ public class ScreenMapEditor extends DefaultScreen {
                     mapStage = mapEditor.createStage(
                             Integer.parseInt(tfAmountOfXflilds.getText()),
                             Integer.parseInt(tfAmountOfYflilds.getText()),
-                            viewPort
+                            mapStageViewport
                     );
                     //createFreameAroudMap();
 
-//                    if (isMapCreated) {
-//                        myGL = new MyGestureListener();
-//                        myGD = new MyGestureDetector(myGL);
-//
-//                        inputMultiPlexer.addProcessor(myGD);
-//                    }
+                    if (isMapCreated) {
+                        DefaultGestureListener myGL = new DefaultGestureListener(mapStage, mapEditor);
+                        DefaultGestureDetector myGD = new DefaultGestureDetector(myGL);
+
+                        getInputMultiplexer().addProcessor(myGD);
+                    }
 
                     window.remove();
                 }

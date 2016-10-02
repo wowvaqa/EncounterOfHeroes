@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\l.wawrzyniak\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.4\194b33382d6d58fad031521ba3331d926c476c9b\gdx-backend-android-1.9.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="194b33382d6d58fad031521ba3331d926c476c9b">
+        <dex dex="D:\v\java\EncounterOfHeroes\EncounterOfHeroes\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.4_10b2e8b6400b59457f4b307f5dffa68c1f1bfcca.jar" />
+    </item>
+    <item
+        jar="C:\Users\l.wawrzyniak\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.4\4b4b7962d1bc75af0438f5c81ec1010557bc9ee5\gdx-1.9.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4b4b7962d1bc75af0438f5c81ec1010557bc9ee5">
+        <dex dex="D:\v\java\EncounterOfHeroes\EncounterOfHeroes\android\build\intermediates\pre-dexed\debug\gdx-1.9.4_e324f1fa313b4136bca59f23bd0a1f5e8ed7bc5e.jar" />
+    </item>
+    <item
+        jar="D:\v\java\EncounterOfHeroes\EncounterOfHeroes\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d4a564c3fa507a926f06a9e197a153b20263bf70">
+        <dex dex="D:\v\java\EncounterOfHeroes\EncounterOfHeroes\android\build\intermediates\pre-dexed\debug\core-1.0_9a82f405e3156b88fca37ae57a166bb0515c0918.jar" />
+    </item>
+    <item
+        jar="C:\Users\l.wawrzyniak\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-ai\1.8.0\ec30677d8ab1a8b8aa4b853c5f4e4b1361f50bf5\gdx-ai-1.8.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ec30677d8ab1a8b8aa4b853c5f4e4b1361f50bf5">
+        <dex dex="D:\v\java\EncounterOfHeroes\EncounterOfHeroes\android\build\intermediates\pre-dexed\debug\gdx-ai-1.8.0_657c7047dde3cfef9704005bfd3cf57f21354571.jar" />
+    </item>
+
+</items>
