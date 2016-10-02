@@ -2,5 +2,9 @@
     {
         "merged": "D:\\docs\\Dropbox\\java\\EncounterOfHeroes\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "D:\\docs\\Dropbox\\java\\EncounterOfHeroes\\android\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\v\\java\\EncounterOfHeroes\\EncounterOfHeroes\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\v\\java\\EncounterOfHeroes\\EncounterOfHeroes\\android\\res\\drawable-xxhdpi\\ic_launcher.png"
     }
 ]
